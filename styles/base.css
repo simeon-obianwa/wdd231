@@ -1,0 +1,308 @@
+:root {
+    --primary-color: #333333;
+    --secondary-color: #555555;
+    --accent-color: #0066cc;
+    --bg-light: #f4f4f4;
+    --text-dark: #222;
+    --text-light: #fff;
+    --completed-color: #d4edda;
+    --completed-border: #c3e6cb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+#nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+#nav-links.open {
+    display: flex;
+}
+
+#nav-links li a {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#nav-links li a:hover,
+#nav-links li a.active {
+    background-color: var(--secondary-color);
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: var(--text-light);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active-filter {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-card {
+    padding: 15px;
+    background-color: var(--bg-light);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.course-card.completed {
+    background-color: var(--completed-color);
+    border-color: var(--completed-border);
+    color: #155724;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin: 3px;
+    font-weight: normal;
+}
+
+.course-header h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.course-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-credits {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 0.5rem 0;
+}
+
+.course-certificate {
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.course-description {
+    font-size: 0.95rem;
+    margin: 1rem 0;
+    text-align: left;
+    font-weight: normal;
+}
+
+.course-tech {
+    margin: 0.5rem 0;
+}
+
+.completed-badge {
+    color: #155724;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.credits-total {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay-content {
+    background: var(--text-light);
+    color: var(--text-dark);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    text-align: left;
+}
+
+.overlay-content h2 {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0 0 1rem 0;
+    border-radius: 0;
+    text-align: left;
+}
+
+.overlay-content p {
+    margin-bottom: 0.75rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+.overlay-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-dark);
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.overlay-close:hover {
+    color: var(--accent-color);
+}

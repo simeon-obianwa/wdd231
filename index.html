@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page | Simeon Obianwa</title>
+    <meta name="description"
+        content="WDD 231 Course Home Page for Simeon Obianwa, demonstrating responsive web design, JavaScript, and CSS.">
+    <meta name="author" content="Simeon Obianwa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="Site Logo" width="50" height="50">
+            <span>Simeon Obianwa</span>
+        </div>
+        <button id="menu-button" aria-label="Toggle Menu">☰</button>
+    </header>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="top-sections">
+            <section class="card about-card">
+                <h2>About Me</h2>
+                <p>Hello! My name is Simeon Obianwa, based in Lagos, Nigeria. I am a student at BYU-Idaho, studying
+                    Software Development. I am passionate about web and computer programming, building clean,
+                    responsive, and accessible
+                    web applications with friendly user experience. I enjoy coding with Python, HTML, CSS, C# and
+                    JavaScript.
+                    I love spending quality time outdoors with my friends and family.</p>
+            </section>
+
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <picture>
+                    <img src="images/profile.webp" alt="Photo of Simeon Obianwa" loading="lazy">
+                </picture>
+            </section>
+        </div>
+
+        <section class="card certificate-card">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="filter-buttons">
+                <button id="btn-all" class="active-filter">All</button>
+                <button id="btn-cse">CSE</button>
+                <button id="btn-wdd">WDD</button>
+            </div>
+
+            <div id="course-container" class="courses"></div>
+
+            <p class="credits-total">Total Credits for displayed courses: <span id="total-credits"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/simeonobianwa" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32" loading="lazy">
+            </a>
+            <a href="https://github.com/simeon-obianwa" target="_blank" aria-label="GitHub">
+                <img src="images/github-icon.svg" alt="GitHub" width="32" height="32" loading="lazy">
+            </a>
+            <a href="https://x.com/SimeonObianwa" target="_blank" aria-label="X (formerly Twitter)">
+                <img src="images/x-icon.svg" alt="X Twitter" width="32" height="32" loading="lazy">
+            </a>
+        </div>
+
+        <p>&copy;<span id="currentyear"></span> 🌸 Simeon Obianwa 🌸 Lagos, Nigeria</p>
+
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+
+</body>
+
+</html>
