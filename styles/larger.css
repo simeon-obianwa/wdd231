@@ -1,70 +1,62 @@
-header {
-    justify-content: center;
-    padding: 2rem;
-}
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: center;
+        padding: 2rem;
+    }
 
-#menu-button {
-    display: none;
-}
+    #menu-button {
+        display: none;
+    }
 
-nav {
-    background-color: var(--primary-color);
-}
+    #nav-links {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-#nav-links {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    #nav-links li a {
+        padding: 1rem 2rem;
+    }
 
-#nav-links li a {
-    padding: 1rem 2rem;
-    transition: background-color 0.3s;
-}
+    main {
+        padding: 2rem;
+    }
 
-#nav-links li a:hover,
-#nav-links li a.active {
-    background-color: var(--secondary-color);
-}
+    .top-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
 
-.top-sections {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-}
+    .card {
+        padding: 1.5rem;
+    }
 
-.courses {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
+    .filter-buttons {
+        margin-bottom: 2rem;
+    }
 
-.course-card {
-    flex: 1 1 30%;
-    min-width: 250px;
-    max-width: 350px;
-}
+    .courses {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-.filter-buttons {
-    margin-bottom: 2rem;
-}
+    .course-card {
+        flex: 1 1 30%;
+        min-width: 250px;
+        max-width: 350px;
+    }
 
-.overlay-content {
-    max-width: 700px;
-    padding: 2.5rem;
-}
+    .overlay-content {
+        max-width: 700px;
+        padding: 2.5rem;
+    }
 
-main {
-    padding: 2rem;
-}
-
-.card {
-    padding: 1.5rem;
-}
-
-footer {
-    padding: 2rem 1rem;
+    footer {
+        padding: 2rem 1rem;
+    }
 }
