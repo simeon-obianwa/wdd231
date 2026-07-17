@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Adas Enterprise",
+        "address": "Plot 8, Providence Street, Lekki Phase 1, Lagos",
+        "phone": "+234 800 123 4567",
+        "website": "https://adasenterprise.com.ng",
+        "image": "images/adas.svg",
+        "membershipLevel": 3,
+        "description": "Leading provider of enterprise solutions in West Africa."
+    },
+    {
+        "name": "Bens Company",
+        "address": "21 Admiralty Way, Lekki Phase 1, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://benscompany.com.ng",
+        "image": "images/bens.svg",
+        "membershipLevel": 2,
+        "description": "Manufacturing and logistics excellence since 1990."
+    },
+    {
+        "name": "Oaks Enterprise",
+        "address": "Block 10, The Lennox Mall, Lekki, Lagos",
+        "phone": "+234 802 345 6789",
+        "website": "https://oaksenterprise.com.ng",
+        "image": "images/oaks.svg",
+        "membershipLevel": 1,
+        "description": "Sustainable wood, timber, and furniture products."
+    },
+    {
+        "name": "Dans Company",
+        "address": "5 Admiralty Road, Lekki Phase 1, Lagos",
+        "phone": "+234 803 456 7890",
+        "website": "https://danscompany.com.ng",
+        "image": "images/dans.svg",
+        "membershipLevel": 3,
+        "description": "Innovating the future of software in Nigeria."
+    },
+    {
+        "name": "Tukas Holdings",
+        "address": "23A Dr Adewale Oshin Street, Lekki Phase 1, Lagos",
+        "phone": "+234 804 567 8901",
+        "website": "https://tukasholdings.com.ng",
+        "image": "images/tukas.svg",
+        "membershipLevel": 1,
+        "description": "Global investment and real estate holding group."
+    },
+    {
+        "name": "Aprix Company",
+        "address": "Kusenla Road, Ikate Elegushi, Lekki, Lagos",
+        "phone": "+234 805 678 9012",
+        "website": "https://aprixcompany.com.ng",
+        "image": "images/aprix.svg",
+        "membershipLevel": 2,
+        "description": "Advanced agricultural and agritech technology."
+    },
+    {
+        "name": "Odas Company Limited",
+        "address": "Awudu Ekpegha Boulevard, Lekki Phase 1, Lagos",
+        "phone": "+234 806 789 0123",
+        "website": "https://odaslimited.com.ng",
+        "image": "images/odas.svg",
+        "membershipLevel": 1,
+        "description": "Retail, FMCG, and wholesale distribution."
+    },
+    {
+        "name": "Marklink Enterprise",
+        "address": "Prince Bode Adebowale Crescent, Lekki Phase 1, Lagos",
+        "phone": "+234 807 890 1234",
+        "website": "https://marklink.com.ng",
+        "image": "images/marklink.svg",
+        "membershipLevel": 2,
+        "description": "Creative digital marketing and PR solutions."
+    },
+    {
+        "name": "Aiwas Enterprise",
+        "address": "Victoria Arobieke Street, Lekki Phase 1, Lagos",
+        "phone": "+234 808 901 2345",
+        "website": "https://aiwasenterprise.com.ng",
+        "image": "images/aiwas.svg",
+        "membershipLevel": 3,
+        "description": "Renewable energy consulting and solar setup."
+    }
+]
