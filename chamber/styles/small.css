@@ -12,18 +12,13 @@
     --white-transparent: #ffffff1a;
     --black-transparent: #0000001a;
     --transparent-bg: #00000000;
-    /* Standardizes transparent/none keywords */
     --badge-gold: #ffd700;
-    /* Standardizes hardcoded hex */
     --badge-silver: #e0e0e0;
-    /* Standardizes hardcoded hex */
     --badge-member: #cfd8dc;
-    /* Standardizes hardcoded hex */
     --list-even-bg: #e9ecef;
-    /* Standardizes hardcoded hex */
+  
 }
 
-/* Base Styles */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--text-color);
@@ -33,14 +28,12 @@ body {
     overflow-x: hidden;
 }
 
-/* Global Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Consolidated Typography & Links */
 .logo-box .site-title,
 .list section p,
 .footer-col p {
@@ -59,7 +52,6 @@ header,
     color: var(--pure-white);
 }
 
-/* Header */
 header {
     background-color: var(--primary-color);
     padding: 1rem 0;
@@ -82,7 +74,6 @@ header {
     font-weight: 700;
 }
 
-/* Responsive Navigation */
 #menu {
     font-size: 1.5rem;
     background-color: var(--transparent-bg);
@@ -118,7 +109,6 @@ nav {
     color: var(--pure-black);
 }
 
-/* Main Content & Toggles */
 main {
     padding: 1rem 0;
 }
@@ -142,7 +132,6 @@ main {
     border-radius: 4px;
 }
 
-/* Member Display: Grid View (Default) */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -169,7 +158,6 @@ main {
     color: var(--primary-color);
 }
 
-/* Membership Level Badges */
 .membership-badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
@@ -193,7 +181,6 @@ main {
     background-color: var(--badge-member);
 }
 
-/* Member Display: List View */
 .list {
     display: flex;
     flex-direction: column;
@@ -214,7 +201,6 @@ main {
     display: none;
 }
 
-/* Footer */
 footer {
     background-color: var(--footer-bg);
     color: var(--text-color);
