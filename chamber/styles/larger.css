@@ -61,44 +61,42 @@
         justify-self: end;
         text-align: right;
     }
-}
 
-.hero img {
-    height: 500px;
-}
+    .hero img {
+        height: 500px;
+    }
 
-.hero-content h1 {
-    font-size: 3rem;
-}
+    .hero-content h1 {
+        font-size: 3rem;
+    }
 
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "events weather"
-        "spotlights spotlights";
-    gap: 2rem;
-}
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "events weather"
+            "spotlights spotlights";
+        gap: 2rem;
+    }
 
-.current-events {
-    grid-area: events;
-}
+    .current-events {
+        grid-area: events;
+    }
 
-.weather-section {
-    grid-area: weather;
-}
+    .weather-section {
+        grid-area: weather;
+    }
 
-.spotlights-section {
-    grid-area: spotlights;
-}
+    .spotlights-section {
+        grid-area: spotlights;
+    }
 
-.spotlight-grid {
-    flex-direction: row;
+    .spotlight-grid {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-    justify-content: space-around;
-}
-
-.spotlight-card {
-    flex: 1;
-
+    .spotlight-card {
+        flex: 1;
+    }
 }
