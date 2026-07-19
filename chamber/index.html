@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lekki Chamber of Commerce Home Page. Discover local businesses, events, and weather in Lekki, Lagos.">
+    <meta name="author" content="Simeon Obianwa">
+
+    <title>Lekki Chamber of Commerce - Home</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Lekki Chamber of Commerce - Home">
+    <meta property="og:description"
+        content="Welcome to the Lekki Chamber of Commerce. Connect with local businesses and community events.">
+    <meta property="og:image" content="https://simeon-obianwa.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://simeon-obianwa.github.io/wdd231/chamber/index.html">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-layout">
+            <div class="logo-box">
+                <img src="images/logo.svg" alt="Lekki Chamber of Commerce Logo" width="80" height="80">
+                <span class="site-title">Lekki Chamber of Commerce</span>
+            </div>
+            <button id="menu" aria-label="Toggle Navigation">☰</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-desktop.webp">
+                <img src="images/hero-mobile.webp" alt="Lekki Cityscape and Business District" width="1200" height="600"
+                    loading="lazy">
+            </picture>
+            <div class="hero-content">
+                <h1>Welcome to the Lekki Chamber of Commerce</h1>
+                <p>Empowering businesses, connecting the community, and driving economic growth in Lagos.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="container home-grid">
+            <section class="card current-events">
+                <h2>Upcoming Events</h2>
+                <ul class="event-list">
+                    <li>
+                        <strong>Tech Innovators Summit</strong>
+                        <p>August 15, 2026 | The Lennox Mall</p>
+                    </li>
+                    <li>
+                        <strong>Lekki Business Networking Mixer</strong>
+                        <p>August 22, 2026 | Eko Hotels Annex</p>
+                    </li>
+                    <li>
+                        <strong>Small Business Grant Workshop</strong>
+                        <p>September 5, 2026 | Chamber HQ</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card weather-section">
+                <h2>Lekki Weather</h2>
+                <div id="current-weather" class="current-weather">
+                    <p>Loading weather data...</p>
+                </div>
+                <h3>3-Day Forecast</h3>
+                <div id="weather-forecast" class="forecast-container">
+                </div>
+            </section>
+
+            <section class="card spotlights-section">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container" class="spotlight-grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-layout">
+            <div class="footer-col footer-contact">
+                <p><strong>Lekki Chamber of Commerce</strong></p>
+                <p>21 Admiralty Way</p>
+                <p>Lekki Phase 1, Lagos, Nigeria</p>
+                <p><a href="mailto:info@lekkichamber.org">info@lekkichamber.org</a></p>
+                <p><a href="tel:2348100005500">+234 810 000 5500</a></p>
+            </div>
+
+            <div class="footer-col footer-social">
+                <a href="https://youtube.com/lekkichamber" target="_blank"
+                    aria-label="Lekki Chamber of Commerce YouTube Page">
+                    <img src="images/youtube.svg" alt="YouTube Icon" width="60">
+                </a>
+                <a href="https://twitter.com/lekkichamber" target="_blank"
+                    aria-label="Lekki Chamber of Commerce Twitter Feed">
+                    <img src="images/twitter.svg" alt="Twitter Icon" width="60">
+                </a>
+                <a href="https://linkedin.com/company/lekkichamber" target="_blank"
+                    aria-label="Lekki Chamber of Commerce LinkedIn Profile">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon" width="60">
+                </a>
+            </div>
+
+            <div class="footer-col footer-dev">
+                <p>WDD 231 Class Project</p>
+                <p>Simeon Obianwa</p>
+                <p>&copy; <span id="year"></span> Lekki Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
