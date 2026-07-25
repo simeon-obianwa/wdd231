@@ -88,7 +88,6 @@ img {
 
 .list,
 .footer-layout,
-.footer-col,
 .join-grid,
 .form-container,
 .membership-cards,
@@ -99,6 +98,12 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .footer-social {
@@ -158,9 +163,10 @@ button,
 }
 
 .cta-button {
-    width: auto;
+    width: fit-content;
     display: inline-block;
     padding: 1rem 2rem;
+    margin: 0 auto;
 }
 
 .modal-btn {
@@ -257,9 +263,8 @@ footer {
 }
 
 .footer-col p {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    line-height: 1.4;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .hero {

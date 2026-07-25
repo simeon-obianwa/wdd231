@@ -40,17 +40,21 @@
     }
 
     footer .footer-layout {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 4rem;
+    }
+
+    .footer-col {
         text-align: left;
     }
 
     .footer-social {
         flex-direction: row;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .footer-social img {
@@ -58,11 +62,9 @@
     }
 
     .footer-dev {
-        justify-self: end;
         text-align: right;
     }
 
-    /* Moving these inside the media query fixes the "Repeated Rules" validation error */
     .hero img {
         height: 500px;
     }
