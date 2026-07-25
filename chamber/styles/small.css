@@ -157,10 +157,10 @@ button,
     color: var(--white);
 }
 
-.cta-button,
-.modal-btn {
-    background-color: var(--accent);
-    color: var(--black);
+.cta-button {
+    width: auto;
+    display: inline-block;
+    padding: 1rem 2rem;
 }
 
 .modal-btn {
