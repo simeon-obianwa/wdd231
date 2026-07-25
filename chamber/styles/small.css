@@ -394,3 +394,157 @@ footer a:hover {
     background: var(--border-color);
     margin: 1rem 0;
 }
+
+.join-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chamber-form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--card-bg);
+}
+
+.chamber-form legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+.chamber-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.chamber-form input[type="text"],
+.chamber-form input[type="email"],
+.chamber-form input[type="tel"],
+.chamber-form select,
+.chamber-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.chamber-form input:required,
+.chamber-form select:required {
+    border-left: 5px solid #d9534f;
+}
+
+.chamber-form input:required:valid,
+.chamber-form select:required:valid {
+    border-left: 5px solid #5cb85c;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--pure-white);
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.membership-cards h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.level-card {
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 0.6s ease-out forwards;
+}
+
+#card-np {
+    animation-delay: 0.2s;
+}
+
+#card-bronze {
+    animation-delay: 0.4s;
+}
+
+#card-silver {
+    animation-delay: 0.6s;
+}
+
+#card-gold {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-btn {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.thank-you-box {
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.submission-details {
+    text-align: left;
+    background-color: var(--list-even-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining the Lekki Chamber of Commerce.">
+    <meta name="author" content="Simeon Obianwa">
+    <title>Thank You | Lekki Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-layout">
+            <div class="logo-box">
+                <img src="images/logo.svg" alt="Lekki Chamber of Commerce Logo" width="80" height="80">
+                <span class="site-title">Lekki Chamber of Commerce</span>
+            </div>
+            <button id="menu" aria-label="Toggle Navigation">☰</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="thank-you-box card">
+                <h1>Application Received!</h1>
+                <p>Thank you for applying to the Lekki Chamber of Commerce. We have received your information.</p>
+
+                <div class="submission-details">
+                    <h3>Submission Summary</h3>
+                    <p><strong>First Name:</strong> <span id="res-first"></span></p>
+                    <p><strong>Last Name:</strong> <span id="res-last"></span></p>
+                    <p><strong>Email:</strong> <span id="res-email"></span></p>
+                    <p><strong>Mobile Number:</strong> <span id="res-phone"></span></p>
+                    <p><strong>Organization:</strong> <span id="res-org"></span></p>
+                    <p><strong>Timestamp:</strong> <span id="res-time"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-layout">
+            <div class="footer-col footer-contact">
+                <p><strong>Lekki Chamber of Commerce</strong></p>
+                <p>21 Admiralty Way</p>
+                <p>Lekki Phase 1, Lagos, Nigeria</p>
+            </div>
+            <div class="footer-col footer-dev">
+                <p>WDD 231 Class Project | Simeon Obianwa</p>
+                <p>&copy; <span id="year"></span> | Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

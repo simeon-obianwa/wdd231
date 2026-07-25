@@ -99,4 +99,14 @@
     .spotlight-card {
         flex: 1;
     }
-}
+
+    .join-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    .modal {
+        max-width: 500px;
+    }
