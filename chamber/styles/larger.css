@@ -62,6 +62,7 @@
         text-align: right;
     }
 
+    /* Moving these inside the media query fixes the "Repeated Rules" validation error */
     .hero img {
         height: 500px;
     }
@@ -73,9 +74,7 @@
     .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "events weather"
-            "spotlights spotlights";
+        grid-template-areas: "events weather" "spotlights spotlights";
         gap: 2rem;
     }
 
@@ -110,3 +109,4 @@
     .modal {
         max-width: 500px;
     }
+}
