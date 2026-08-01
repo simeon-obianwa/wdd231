@@ -22,12 +22,16 @@
     --even: #e9ecef;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--text);
     background-color: var(--bg);
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
@@ -40,15 +44,6 @@ body {
 h1,
 h2,
 h3,
-p,
-legend,
-label {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
 legend,
 label,
 .site-title,
@@ -56,13 +51,15 @@ label,
 .modal-btn,
 .cta-button,
 .learn-more-btn,
-.weather-now .temp {
+.weather-now .temp,
+b,
+strong {
     font-weight: bold;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--text);
 }
 
 a:hover {
@@ -202,10 +199,6 @@ button,
     background-color: var(--transparent);
     font-size: 1.5rem;
     padding: 0;
-}
-
-#menu,
-.visitor-banner button {
     color: var(--white);
 }
 
@@ -217,7 +210,6 @@ button,
     margin-top: 0.5rem;
     border: 1px solid var(--border);
     border-radius: 4px;
-    box-sizing: border-box;
     font-family: inherit;
     display: block;
 }
@@ -249,8 +241,6 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: none;
 }
 
@@ -376,7 +366,6 @@ hr {
 
 .event-list {
     list-style: none;
-    padding: 0;
 }
 
 .event-list li {
@@ -387,7 +376,6 @@ hr {
 
 .event-list li:last-child {
     border-bottom: 0;
-    margin-bottom: 0;
     padding-bottom: 0;
 }
 
@@ -460,7 +448,6 @@ hr {
 }
 
 #modal-content ul {
-    margin: 0;
     padding-left: 1.2rem;
 }
 
@@ -524,7 +511,6 @@ hr {
 }
 
 .discover-card figure {
-    margin: 0;
     overflow: hidden;
     border-radius: 6px;
 }
