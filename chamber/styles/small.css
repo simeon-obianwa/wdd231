@@ -55,6 +55,7 @@ label,
 .submit-btn,
 .modal-btn,
 .cta-button,
+.learn-more-btn,
 .weather-now .temp {
     font-weight: bold;
 }
@@ -120,11 +121,12 @@ img {
 .grid section,
 .list section,
 .forecast-container,
-.spotlight-card {
+.spotlight-card,
+.discover-card {
     background-color: var(--card);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.25rem;
     box-shadow: 0 4px 6px var(--shadow);
 }
 
@@ -149,17 +151,17 @@ button,
     text-align: center;
 }
 
-.submit-btn,
-.cta-button {
+.submit-btn {
     padding: 1rem;
     width: 100%;
     display: block;
     font-size: 1.2rem;
-}
-
-.submit-btn {
     background-color: var(--primary);
     color: var(--white);
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary);
 }
 
 .cta-button {
@@ -167,19 +169,21 @@ button,
     display: inline-block;
     padding: 1rem 2rem;
     margin: 0 auto;
+    font-size: 1.2rem;
+    background-color: var(--accent);
+    color: var(--black);
+}
+
+.cta-button:hover,
+.modal-btn:hover,
+.learn-more-btn:hover {
+    background-color: var(--hover);
 }
 
 .modal-btn {
     padding: 0.5rem 1rem;
-}
-
-.submit-btn:hover {
-    background-color: var(--secondary);
-}
-
-.cta-button:hover,
-.modal-btn:hover {
-    background-color: var(--hover);
+    background-color: var(--accent);
+    color: var(--black);
 }
 
 #menu,
@@ -258,13 +262,17 @@ nav li a.active {
 
 footer {
     background-color: var(--footer);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
 .footer-col p {
     margin: 0;
     line-height: 1.2;
+}
+
+.footer-social img {
+    width: 40px;
 }
 
 .hero {
@@ -328,10 +336,6 @@ hr {
     height: 1px;
     background: var(--border);
     margin: 1rem 0;
-}
-
-.footer-social img {
-    width: 40px;
 }
 
 .spotlight-card img {
@@ -411,9 +415,15 @@ hr {
 }
 
 .modal {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px var(--modal);
+    padding: 1.75rem;
     max-width: 90%;
+    width: 420px;
     margin: auto;
-    box-shadow: 0 4px 15px var(--modal);
+    position: fixed;
+    background-color: var(--white);
 }
 
 .modal::backdrop {
@@ -424,6 +434,32 @@ hr {
     top: 15px;
     right: 15px;
     position: absolute;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--black);
+    font-weight: bold;
+}
+
+#modal-content h3 {
+    font-size: 1.25rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    border-bottom: none;
+}
+
+#modal-content ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+#modal-content li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
     color: var(--text);
 }
 
@@ -458,4 +494,96 @@ hr {
 
 .list section img {
     display: none;
+}
+
+.visitor-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.visitor-banner button {
+    background: var(--transparent);
+    color: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.discover-intro {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-top: 0.5rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "place1"
+        "place2"
+        "place3"
+        "place4"
+        "place5"
+        "place6"
+        "place7"
+        "place8";
+}
+
+.discover-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.discover-card h2 {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.discover-card figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.discover-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.learn-more-btn {
+    margin-top: auto;
+    background-color: var(--accent);
+    color: var(--black);
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--hover);
 }

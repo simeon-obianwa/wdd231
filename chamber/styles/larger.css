@@ -1,4 +1,26 @@
-@media (min-width: 768px) {
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        grid-template-areas:
+            "place1 place2"
+            "place3 place4"
+            "place5 place6"
+            "place7 place8";
+    }
+
+    .discover-card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card figure img:hover {
+        transform: scale(1.06);
+        filter: brightness(1.1);
+    }
+}
+
+@media (min-width: 1025px) {
     #menu {
         display: none;
     }
@@ -110,5 +132,23 @@
 
     .modal {
         max-width: 500px;
+    }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        grid-template-areas:
+            "place1 place2 place3 place4"
+            "place5 place6 place7 place8";
+    }
+
+    .discover-card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card figure img:hover {
+        transform: scale(1.08);
+        filter: brightness(1.12);
     }
 }
