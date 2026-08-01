@@ -76,14 +76,17 @@ img {
 
 .header-layout,
 .logo-box,
-.weather-now {
+.weather-now,
+.footer-social,
+.visitor-banner {
     display: flex;
     align-items: center;
 }
 
 .header-layout,
 .forecast-container,
-.directory-header {
+.directory-header,
+.visitor-banner {
     justify-content: space-between;
 }
 
@@ -95,10 +98,11 @@ img {
 .submission-details,
 .home-grid,
 .current-weather,
-.spotlight-grid {
+.spotlight-grid,
+.discover-card {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .footer-col {
@@ -108,8 +112,6 @@ img {
 }
 
 .footer-social {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 1rem;
 }
@@ -135,17 +137,22 @@ img {
     background-color: var(--even);
 }
 
-.grid {
+.grid,
+.discover-grid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1.5rem;
+}
+
+.grid {
+    grid-template-columns: 1fr;
 }
 
 button,
 .submit-btn,
 .cta-button,
-.modal-btn {
-    border: none;
+.modal-btn,
+.learn-more-btn {
+    border: 0;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
@@ -154,7 +161,6 @@ button,
 .submit-btn {
     padding: 1rem;
     width: 100%;
-    display: block;
     font-size: 1.2rem;
     background-color: var(--primary);
     color: var(--white);
@@ -166,7 +172,6 @@ button,
 
 .cta-button {
     width: fit-content;
-    display: inline-block;
     padding: 1rem 2rem;
     margin: 0 auto;
     font-size: 1.2rem;
@@ -180,20 +185,27 @@ button,
     background-color: var(--hover);
 }
 
-.modal-btn {
-    padding: 0.5rem 1rem;
+.modal-btn,
+.learn-more-btn {
+    padding: 0.6rem 1rem;
     background-color: var(--accent);
     color: var(--black);
 }
 
+.learn-more-btn {
+    margin-top: auto;
+}
+
 #menu,
-.close-modal {
+.close-modal,
+.visitor-banner button {
     background-color: var(--transparent);
     font-size: 1.5rem;
     padding: 0;
 }
 
-#menu {
+#menu,
+.visitor-banner button {
     color: var(--white);
 }
 
@@ -267,7 +279,6 @@ footer {
 }
 
 .footer-col p {
-    margin: 0;
     line-height: 1.2;
 }
 
@@ -334,7 +345,7 @@ footer {
 hr {
     border: 0;
     height: 1px;
-    background: var(--border);
+    background-color: var(--border);
     margin: 1rem 0;
 }
 
@@ -375,14 +386,15 @@ hr {
 }
 
 .event-list li:last-child {
-    border-bottom: none;
+    border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .card h2,
 .membership-cards h2,
-.grid section h3 {
+.grid section h3,
+.discover-card h2 {
     color: var(--primary);
 }
 
@@ -391,12 +403,15 @@ hr {
     padding-bottom: 0.5rem;
 }
 
+.discover-card h2 {
+    font-size: 1.3rem;
+}
+
 .membership-badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-size: 0.85rem;
-    font-weight: bold;
     margin: 0.5rem 0;
     text-transform: uppercase;
     color: var(--text);
@@ -415,7 +430,7 @@ hr {
 }
 
 .modal {
-    border: none;
+    border: 0;
     border-radius: 10px;
     box-shadow: 0 10px 25px var(--modal);
     padding: 1.75rem;
@@ -434,12 +449,7 @@ hr {
     top: 15px;
     right: 15px;
     position: absolute;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
     color: var(--black);
-    font-weight: bold;
 }
 
 #modal-content h3 {
@@ -447,13 +457,11 @@ hr {
     color: var(--black);
     margin-bottom: 1rem;
     padding-right: 2rem;
-    border-bottom: none;
 }
 
 #modal-content ul {
     margin: 0;
     padding-left: 1.2rem;
-    list-style-type: disc;
 }
 
 #modal-content li {
@@ -497,23 +505,10 @@ hr {
 }
 
 .visitor-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--primary);
     color: var(--white);
     padding: 1rem 1.5rem;
     margin-bottom: 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.visitor-banner button {
-    background: var(--transparent);
-    color: var(--white);
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
 
 .discover-intro {
@@ -523,28 +518,9 @@ hr {
 }
 
 .discover-grid {
-    display: grid;
-    gap: 1.5rem;
     grid-template-areas:
-        "place1"
-        "place2"
-        "place3"
-        "place4"
-        "place5"
-        "place6"
-        "place7"
-        "place8";
-}
-
-.discover-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.discover-card h2 {
-    font-size: 1.3rem;
-    color: var(--primary);
+        "place1" "place2" "place3" "place4"
+        "place5" "place6" "place7" "place8";
 }
 
 .discover-card figure {
@@ -564,26 +540,9 @@ hr {
     font-style: normal;
     font-size: 0.9rem;
     color: var(--secondary);
-    font-weight: bold;
 }
 
 .discover-card p {
     font-size: 0.95rem;
     line-height: 1.4;
-}
-
-.learn-more-btn {
-    margin-top: auto;
-    background-color: var(--accent);
-    color: var(--black);
-    padding: 0.6rem 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.learn-more-btn:hover {
-    background-color: var(--hover);
 }
